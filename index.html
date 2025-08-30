@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container hero">
+      <p class="hello">Hello! 👋</p>
+      <h1 class="title">My Portfolio</h1>
+      <p class="one-liner">I'm Nivetha — I love building AI, IoT, and web experiences.</p>
+      <a href="#projects" class="btn primary" id="view-work-btn" aria-label="View my work">View My Work</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container card v-stack">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-wrap">
+          <!-- Replace the src with your own photo URL -->
+          <img class="avatar" src="https://i.ibb.co/gLSpdyY5/your-image.jpg" alt="Profile photo of Nivetha" />
+          <p class="about-line">Hi, I’m Nivetha. I enjoy turning ideas into real, usable projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container card v-stack">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-box">
+            <h3>Project 1</h3>
+            <p class="project-title">Real-time Emotion Detection</p>
+            <p class="project-desc">Detects facial emotions instantly using computer vision.</p>
+          </article>
+          <article class="project-box">
+            <h3>Project 2</h3>
+            <p class="project-title">Smart Irrigation</p>
+            <p class="project-desc">IoT-based irrigation that waters plants intelligently.</p>
+          </article>
+          <article class="project-box">
+            <h3>Project 3</h3>
+            <p class="project-title">My Portfolio</p>
+            <p class="project-desc">This site—simple, fast, and responsive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+      <div class="container card v-stack">
+        <h2 class="section-title">Contact Me</h2>
+
+        <!-- Each item in its own vertical box -->
+        <div class="input-box">
+          <label for="name">Name</label>
+          <input id="name" type="text" value="Nivetha S" />
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input id="email" type="email" value="nivetha.shanmugam06@gmail.com" />
+        </div>
+
+        <div class="input-box">
+          <label for="phone">Contact Number</label>
+          <input id="phone" type="tel" value="9600592296" />
+        </div>
+
+        <div class="input-box">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button class="btn send" id="send-btn" aria-label="Send message">Send</button>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Nivetha S • Built with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
